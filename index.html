@@ -1,0 +1,10 @@
+main
+  form(name="form")
+    .formTitle
+      h1 Annoying Button
+      span.iconify(data-icon="bi:emoji-angry-fill")
+    label(for="name") Nome
+    input#nameField(type="text", name="name", required)
+    label(for="email") Email
+    input#emailField(type="text", name="email", required)
+    input#btn(type="submit", value="Enviar", onmouseenter="return validate()")
